@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 
 class ProfileController extends Controller
 {
-    //　以下を追加しました。
+    // 以下を追加（更新2022/1/4）
     public function add()
     {
       return view('admin.profile.create');
@@ -25,7 +25,6 @@ class ProfileController extends Controller
     
     public function update()
     {
-      return redirect('admin/profile/edit');
+      return redirect('admin/proflile/edit');
     }
-    
 }

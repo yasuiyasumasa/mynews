@@ -12,4 +12,11 @@ class NewsController extends Controller
     {
       return view('admin.news.create');
     }
+    
+  // 以下を追記(2021/12/16)
+  public function create(Request $request)
+  {
+      // admin/news/createにリダイレクトする
+      return redirect('admin/news/create');
+  }  
 }
