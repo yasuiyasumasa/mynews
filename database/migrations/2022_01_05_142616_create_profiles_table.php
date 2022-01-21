@@ -17,7 +17,7 @@ class CreateProfilesTable extends Migration
         Schema::create('profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name'); //名前を保存するカラム
-            $table->string('gender')->nullable(); // 性別を保存するカラム
+            $table->string('gender'); // 性別を保存するカラム
             $table->string('hobby'); //趣味を保存するカラム
             $table->string('introduction'); //自己紹介文を保存するカラム
             $table->timestamps();
